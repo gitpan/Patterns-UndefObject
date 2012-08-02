@@ -16,4 +16,8 @@ name: Patterns-UndefObject
 requires:
   Scalar::List::Utils: 0
   Sub::Exporter: 0
-version: 0.002
+resources:
+  bugtracker: https://github.com/jjn1056/Patterns-UndefObject/issues
+  homepage: https://github.com/jjn1056/Patterns-UndefObject
+  repository: https://github.com/jjn1056/Patterns-UndefObject.git
+version: 0.003
