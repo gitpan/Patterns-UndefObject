@@ -22,9 +22,10 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Patterns::UndefObject",
   "PREREQ_PM" => {
+    "Scalar::List::Utils" => 0,
     "Sub::Exporter" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }

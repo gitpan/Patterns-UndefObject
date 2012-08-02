@@ -1,7 +1,7 @@
 use Test::Most;
 use Patterns::UndefObject 'Maybe';
 
-ok ref(my $obj = Patterns::UndefObject->new),
+ok ref(my $obj = Patterns::UndefObject->maybe),
   "Created Object";
 
 ok eval {  $obj->a->b->c; 1 },
@@ -25,5 +25,9 @@ ok(
   'Failed as expected');
 
 is Maybe($undef)->a || 'a', 'a';
+
+my $real = bless {a=>100}, 'Example::Class:111';
+
+is Maybe($real)->{a} || 100, '100';
 
 done_testing;
